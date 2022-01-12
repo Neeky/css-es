@@ -1,0 +1,78 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+        to left,
+        /* rgb(255,129,204),
+        pink */
+        rgb(238, 92, 92),
+        rgb(154, 127, 250));
+}
+
+.warpper {
+    position:relative;
+    width:400px;
+    height: 250px;
+    top: 150px;
+    /* border: 1px solid aqua; */
+}
+
+.card {
+    position: absolute;
+    width:400px;
+    height:250px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.3),
+        rgba(255,255,255,0.2));
+    backdrop-filter: blur(11px);
+    border-top: 1px solid rgba(255,255,255,.8);
+    border-left: 1px solid rgba(255,255,255,.8);
+}
+
+.card h1 {
+    font:900 50px '';
+    position:absolute;
+    top:10px;
+    left:20px;
+    color:rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.7);
+}
+
+.card p {
+    font:900 25px '';
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    color:rgba(255,255,255,0.3);
+    letter-spacing: 2px;
+}
+
+.yellow-ball{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 140px;
+    left: -40px;
+    z-index: -99;
+}
+
+.aqua-ball {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:aqua;
+    position: absolute;
+    top: -50px;
+    left: 260px;
+    z-index: -99;
+}
