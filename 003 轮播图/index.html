@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>轮播图效果</title>
+        <style>
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width:800px;
+    height:500px;
+    margin-top: 20px;
+    position:relative;
+    overflow: hidden;
+}
+
+.main input {
+    position: absolute;
+    z-index: 2;
+}
+
+.main input:nth-child(1) {
+    top:450px;
+    left: 44%;
+}
+
+.main input:nth-child(2) {
+    top:450px;
+    left: 49%;
+}
+
+.main input:nth-child(3) {
+    top:450px;
+    left: 54%;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    width: calc(800px * 3);
+    transition: 0.5s;
+}
+
+ul li {
+    width: 800px;
+    height: 500px;
+    font-size:50px;
+    list-style: none;
+
+    float: left;
+    text-align: center;
+    line-height: 500px;
+}
+
+ul li:nth-child(1) {
+    background-color: pink;
+}
+
+
+ul li:nth-child(2) {
+    background-color: gray;
+}
+
+ul li:nth-child(3) {
+    background-color: blueviolet;
+}
+
+
+input:nth-child(1):checked ~ ul{
+    margin-left: 0px;
+}
+
+input:nth-child(2):checked  ~ ul{
+    margin-left: -800px;
+}
+
+input:nth-child(3):checked  ~ ul{
+    margin-left: -1600px;
+}
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <input type="radio" id="screen1" name="screen" checked>
+            
+            <input type="radio" id="screen2" name="screen">
+
+            <input type="radio" id="screen3" name="screen">
+
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </body>
+</html>
