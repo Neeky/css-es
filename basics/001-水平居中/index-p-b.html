@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .outer {
+            width:800px;
+            height: 600px;
+            background-color: gainsboro;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .span-after {
+            /* 以下两个属性保证了 span 与父容器同宽 */
+            height: 100%;
+            display: inline-block;
+            
+            /* span 也要设置成 middle ?分析中 */
+            vertical-align: middle;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+        <span class="span-after"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .outer {
+            position: relative;
+            width:800px;
+            height: 600px;
+            background-color: grey;
+        }
+
+        .inner {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+
+            top:300px;
+            margin-top: -100px;
+            
+            /*  为什么下面两行代码不能把 .inner 设置为水平居中 */
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>
